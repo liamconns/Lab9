@@ -20,15 +20,18 @@
         $shipCost = $_POST['ship']; 
 
         if ($shipCost == "0") 
-
+        {
             $ship = "7 Day Shipping";
-
-        else if ($shipCost == "50")
-
+        }   
+        else if ($shipCost == "50") 
+        {
             $ship = "Overnight Shipping";
-
-        else
+        }
+        else 
+        {
             $ship = "3 Day Shipping";
+        }
+            
 
         //sum
         $total = $bookCost + $hoodieCost + $codeCost + $shipCost;

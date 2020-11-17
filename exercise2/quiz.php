@@ -25,6 +25,7 @@
         }
 
         echo "You got<b> $num_correct / 5 correct</b><br>";
+        
         $percent = $num_correct * 20;
         echo "Your total score is: <b>$percent%</b><br><br>";
 
