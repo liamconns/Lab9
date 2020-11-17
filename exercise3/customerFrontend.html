@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title> KU Bookstore </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="formChecker.js"></script>
+</head>
+
+<body>
+    <b>Welcome to the KU Bookstore!</b>
+    <br>
+
+    <br>
+    <form action="customerBackend.php" method="post" onsubmit="return checkForm()">
+
+        Enter Username: <input type="email" name="username" id="username"><br>
+        Enter Password: <input type="password" name="password" id="password"> <br>
+
+        <br>
+        Calculus Textbook: $1000
+        <br>
+        <input type="number" id="book" name="book">
+        <br>
+        Kansas Hoodie: $20
+        <br>
+        <input type="number" id="hoodie" name="hoodie">
+        <br>
+        BIOL 101 Access Code: $99
+        <br>
+        <input type="number" id="code" name="code">
+        <br>
+        What type of shipping would you like?
+        <br>
+
+        <input type="radio" id="shippingOption1" name="ship" value="0">7 Day Shipping: Free<br>
+        <input type="radio" id="shippingOption2" name="ship" value="50">Overnight: $50<br>
+        <input type="radio" id="shippingOption3" name="ship" value="5">3 Day: $5<br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Reset" onClick="window.location.href=window.location.href">
+
+    </form>
+    <br>
+
+</body>
+
+</html>
